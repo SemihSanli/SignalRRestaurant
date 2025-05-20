@@ -100,7 +100,6 @@ Proje, SOLID prensiplerine uygun olarak katmanlara ayrılmıştır. Ayrıca tüm
 ## 🔐 Yetkisiz Erişim Engelleme
 
 - Giriş yapmamış kullanıcılar otomatik olarak login ekranına yönlendirilir.
-- Token tabanlı koruma ve kullanıcı oturumu yönetimi yapılmaktadır.
 
 ---
 
