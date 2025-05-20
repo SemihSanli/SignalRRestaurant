@@ -1,0 +1,51 @@
+﻿@model UpdateContactDTOs
+@{
+    ViewData["Title"] = "UpdateContact";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">İletişim İşlemleri</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title"> İletişim Bilgisi Güncelleme İşlemleri</div>
+                        </div>
+                        <input type="hidden" asp-for="ContactID" />
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="ContactLocation">Lokasyon Giriniz</label>
+                                <input type="text" class="form-control" asp-for="ContactLocation" id="ContactLocation">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="ContactPhone">Telefon Numarası Giriniz</label>
+                                <input type="text" class="form-control" asp-for="ContactPhone" id="ContactPhone">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="ContactEmail">Mail Adresini Giriniz</label>
+                                <input type="text" class="form-control" asp-for="ContactEmail" id="ContactEmail">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="ContactLocation">Mini Açıklama Giriniz</label>
+                                <textarea class="form-control" asp-for="ContactFooterDescription" id="ContactFooterDescription"></textarea>
+
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <button class="btn btn-outline-primary">İletişim Bilgisini Güncelle</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

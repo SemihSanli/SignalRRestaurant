@@ -1,0 +1,54 @@
+﻿@model UpdateBookingDTOs
+@{
+    ViewData["Title"] = "UpdateBooking";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Rezervasyon  İşlemleri</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Rezervasyon Güncelleme İşlemleri</div>
+                        </div>
+                        <input type="hidden" asp-for="BookingID" />
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="bookingname">Ad Soyad</label>
+                                <input type="text" class="form-control" asp-for="BookingName" id="BookingName">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="bookingphone">Telefon Numarası</label>
+                                <input type="text" class="form-control" asp-for="BookingPhone" id="BookingPhone">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="bookingmail">Mail Adresi</label>
+                                <input type="text" class="form-control" asp-for="BookingMail" id="BookingMail">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="bookingpersoncount">Kişi Sayısı</label>
+                                <input type="number" class="form-control" asp-for="BookingPersonCount" id="BookingPersonCount">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="bookingdate">Rezervasyon Tarihi</label>
+                                <input type="date" class="form-control" asp-for="BookingDate" id="BookingDate">
+
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <button class="btn btn-outline-primary">Rezervasyonu Güncelle</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

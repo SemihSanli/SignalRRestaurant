@@ -1,0 +1,57 @@
+﻿@model UpdateTestimonialDTOs
+@{
+    ViewData["Title"] = "UpdateTestimonial";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Müşteri Yorum İşlemleri</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Yeni Müşteri Yorumu İşlemleri</div>
+                        </div>
+                        <input type="hidden" asp-for="TestimonialID" />
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="TestimonialName">Müşteri Adını Girin</label>
+                                <input type="text" class="form-control" asp-for="TestimonialName" id="TestimonialName">
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="TestimonialTitle">Müşteri Ünvanını Girin</label>
+                                <input type="text" class="form-control" asp-for="TestimonialTitle" id="TestimonialTitle">
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="TestimonialImageURL">Resim Dosya Yolu</label>
+                                <input type="text" class="form-control" asp-for="TestimonialImageURL" id="TestimonialImageURL">
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="TestimonialComment">Müşteri Yorumunu Giriniz</label>
+                                <input type="text" class="form-control" asp-for="TestimonialComment" id="TestimonialComment">
+
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <button class="btn btn-outline-primary">Müşteri Yorumunu Ekle</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

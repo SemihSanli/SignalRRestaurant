@@ -1,0 +1,59 @@
+﻿@model UpdateNotificationDTOs
+@{
+    ViewData["Title"] = "UpdateNotification";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Bildirim İşlemleri</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="card">
+                        <input type="hidden" asp-for="NotificationID" />
+                        <div class="card-header">
+                            <div class="card-title"> Bildirim Güncelleme İşlemleri</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="NotificationType">Bildirim Türü </label>
+                                <input type="text" class="form-control" asp-for="NotificationType" id="NotificationType">
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="NotificationIcon">Bildirim Ikonu </label>
+                                <input type="text" class="form-control" asp-for="NotificationIcon" id="NotificationIcon">
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="NotificationDescription">Açıklama </label>
+                                <input type="text" class="form-control" asp-for="NotificationDescription" id="NotificationDescription">
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="NotificationDate">Tarih </label>
+                                <input type="text" class="form-control" asp-for="NotificationDate" id="NotificationDate">
+
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <button class="btn btn-outline-primary">Bildirimi Güncelle </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,4 @@
+﻿--CategoryCount--
+--ProductCount--
+--Aktif Kategori Sayısı--
+--Ürün Adına Göre İşlem --
