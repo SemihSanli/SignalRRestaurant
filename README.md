@@ -75,6 +75,26 @@ Proje, SOLID prensiplerine uygun olarak katmanlara ayrılmıştır. Ayrıca tüm
 - Toplam ve aktif sipariş sayısı
 - Son sipariş tutarı
 - Bu veriler, SignalR ile tarayıcı yenilemeden anlık olarak gösterilmektedir.
+  
+---
+
+## 🌍 Harita ve Navigasyon
+
+- Google Haritalar API kullanılarak restoranın konumu harita üzerinde gösterilmektedir.  
+- Kullanıcılar harita üzerinden restoranın yerini kolayca görebilir ve yol tarifi alabilir.
+
+---
+
+## 🔐 Oturum Yönetimi
+
+- Giriş yapan kullanıcılar, istedikleri zaman **LogOut** butonu aracılığıyla oturumlarını güvenli bir şekilde kapatabilirler.
+
+---
+
+## ⚠️ Hata Sayfası
+
+- Geçersiz URL veya bulunmayan sayfa isteklerinde kullanıcılar için özel ve kullanıcı dostu bir **404 Sayfası** tasarlanmıştır.  
+- Bu sayfa, kullanıcı deneyimini artırmak ve yönlendirme kolaylığı sağlamak amacıyla yapılandırılmıştır.
 
 ---
 
