@@ -1,3 +1,7 @@
+# 🍽️ .Net Core SignalR İle QR Kodlu Sipariş Yönetimi
+##  Eğitimini Murat Yücedağ Hocamın üstlendiği, Udemy üzerinde yayınlanan "Asp.Net Core Api SignalR ile QR Kodlu Sipariş Yönetimi" Adlı eğitim serisini tamamlayarak yaptığım projeyi bitirmiş bulunmaktayım
+
+
 ## 🚧 Proje Mimarisi – 6 Katmanlı Yapı
 
 Proje, SOLID prensiplerine uygun olarak katmanlara ayrılmıştır. Ayrıca tüm kodlar CleanCode prensiplerine uygun bir şekilde yazılmaya özen gösterilmiştir:
