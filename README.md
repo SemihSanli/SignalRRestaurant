@@ -114,6 +114,44 @@ Proje, SOLID prensiplerine uygun olarak katmanlara ayrılmıştır. Ayrıca tüm
 
 ---
 
+
+## 👥 Kullanıcı UI Tarafında Neler Yapabilir?
+
+- Kullanıcı, UI tarafında tüm sayfaları ziyaret edebilir.  
+- Rezervasyon oluşturabilir ve menüyü görüntüleyebilir.  
+- İlgili masa için sipariş oluşturabilir ve siparişin ödemesini gerçekleştirebilir.  
+- Restoranın konumuna, iletişim bilgilerine ve diğer temel bilgilere kolayca ulaşabilir.  
+
+---
+
+## 🛠️ Yönetici Admin Paneli Tarafında Neler Yapabilir?
+
+Admin Paneli, yöneticilerin restoran yönetimi için tüm kritik işlemleri gerçekleştirebildiği kapsamlı bir arayüzdür. Panelde sunulan başlıca özellikler şunlardır:
+
+- **Dashboard:**  
+  SignalR kullanılarak anlık olarak "Toplam Masa", "Aktif Sipariş", "Toplam Sipariş", "Aktif Siparişler" ve "Boş Masa Sayısı" bilgileri görüntülenebilir.
+
+- **Anlık Masa Durumları:**  
+  Masaların dolu veya boş olma durumları SignalR ile anlık olarak takip edilip güncellenir.
+
+- **Bildirimler:**  
+  Sağ üst köşedeki bildirim çan simgesine tıklayarak, yöneticiler kendilerine gönderilen bildirimleri anlık olarak görebilir ve yönetebilir.
+
+- **CRUD İşlemleri:**  
+  Hakkımda, Kategori, İndirim, Öne Çıkanlar, Referans Yorumlar, Sosyal Medya, Bildirimler ve Mail bölümlerinde gerekli CRUD (Create, Read, Update, Delete) işlemleri yapılabilir.  
+  *Not:* "Bildirimler" ve "İndirimler" sayfalarında ayrıca öğelerin aktif/pasif durumları da yönetilebilir.
+
+- **Anlık İstatistikler:**  
+  Kategoriye göre ürün sayısı, en yüksek ve en düşük fiyatlı ürünler, ortalama hamburger fiyatı, toplam sipariş ve aktif sipariş sayıları ile son sipariş tutarı gibi istatistikler SignalR ile anlık olarak görüntülenir.
+
+- **QR Kod Oluşturucu:**  
+  İlgili masalar için hızlıca QR kod oluşturulabilir.
+
+- **Profil Ayarları:**  
+  Yönetici, sistemde kayıtlı kişisel bilgilerini profil ayarlarından güncelleyebilir.
+
+---
+
 ## 📸 Ekran Görüntüleri
 
 ![ImageAlt](https://github.com/SemihSanli/SignalRRestaurant/blob/426a59b1d98a91810089834ff42590e9c3b60fb5/Images/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-05-20%20141714.png)
